@@ -1,0 +1,30 @@
+html
+	head
+		meta(charset='utf-8')
+		meta(http-equiv='X-UA-Compatible', content='IE=edge')
+		meta(name='description', content='Some description')
+		meta(name='viewport', content='width=device-width, initial-scale=1')
+		link(rel='stylesheet', href='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css')
+	body
+		div.container
+			br 
+			form(action='' method='POST')
+				.form-group
+					label(for='post_title') Student_id
+					input#post_title.form-control(type='text' name='student_id' placeholder='student_id' required='')
+					label(for='post_content') Course_id
+					input#post_content.form-control(type='text' name='cid' placeholder='course_id' required='')
+					label(for='author_name') Sect_id
+					input#author_name.form-control(type='text' name='sect_id' placeholder='sect_id' required='')
+					label(for='author_name') Semester
+					input#author_name.form-control(type='text' name='semester' placeholder='semester' required='')
+					label(for='author_name') Year 
+					input#author_name.form-control(type='year' name='year' placeholder='year' required='')
+					label(for='author_name') Grade
+					input#author_name.form-control(type='text' name='grade' placeholder='grade' required='')
+					br
+					input.btn.btn-success(type='submit' value='ADD')
+				
+					a.m-3.btn.btn-info(href='/') Back
+
+
